@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Dr. John Smith",
+        "specialization": "Clinical Psychologist",
+        "experience_years": 15,
+        "rating": 4.9,
+        "contact": {
+            "phone": "+1-123-456-7890",
+            "email": "john.smith@example.com"
+        },
+        "available_online": true
+    },
+    {
+        "id": 2,
+        "name": "Dr. Emma Johnson",
+        "specialization": "Cognitive Behavioral Therapist",
+        "experience_years": 10,
+        "rating": 4.7,
+        "contact": {
+            "phone": "+1-987-654-3210",
+            "email": "emma.johnson@example.com"
+        },
+        "available_online": false
+    },
+    {
+        "id": 3,
+        "name": "Dr. Michael Lee",
+        "specialization": "Child Psychologist",
+        "experience_years": 8,
+        "rating": 4.8,
+        "contact": {
+            "phone": "+1-555-123-4567",
+            "email": "michael.lee@example.com"
+        },
+        "available_online": true
+    },
+    {
+        "id": 4,
+        "name": "Dr. Sophia Williams",
+        "specialization": "Family Therapist",
+        "experience_years": 12,
+        "rating": 4.6,
+        "contact": {
+            "phone": "+1-555-987-6543",
+            "email": "sophia.williams@example.com"
+        },
+        "available_online": false
+    },
+    {
+        "id": 5,
+        "name": "Dr. David Brown",
+        "specialization": "Addiction Counselor",
+        "experience_years": 9,
+        "rating": 4.5,
+        "contact": {
+            "phone": "+1-444-123-7890",
+            "email": "david.brown@example.com"
+        },
+        "available_online": true
+    },
+    {
+        "id": 6,
+        "name": "Dr. Olivia Clark",
+        "specialization": "Trauma Therapist",
+        "experience_years": 11,
+        "rating": 4.7,
+        "contact": {
+            "phone": "+1-222-333-4444",
+            "email": "olivia.clark@example.com"
+        },
+        "available_online": true
+    }
+]

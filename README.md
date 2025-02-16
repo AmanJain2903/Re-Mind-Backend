@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 # Re-Mind-Backend
 Backend ML Models for Re-Mind AI
-=======
 python3 -m venv path/to/venv
 source path/to/venv/bin/activate
 
@@ -20,4 +18,3 @@ const API_URL = process.env.REACT_APP_API_URL;
 brew install ollama
 ollama serve &
 ollama pull mistral
->>>>>>> f7e94b5 (Initial commit)
