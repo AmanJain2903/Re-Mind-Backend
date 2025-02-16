@@ -1,0 +1,38 @@
+[
+    {
+        "user_id": "123",
+        "responses": {
+            "How do you feel today?": "0",
+            "What was the most challenging part of your day?": "0",
+            "What made you smile today?": "0",
+            "What was your most productive moment?": "0",
+            "What was your biggest distraction today?": "0",
+            "What is one thing you' re grateful for?": "0",
+            "What is one thing you learned today?": "0",
+            "What could have gone better?": "0",
+            "How do you feel about tomorrow?": "0",
+            "What is one thing you' ll do differently tomorrow?": "0"
+        },
+        "score": {
+            "date": "score"
+        }
+    },
+    {
+        "user_id": "123",
+        "responses": {
+            "How do you feel today?": "0",
+            "What was the most challenging part of your day?": "0",
+            "What made you smile today?": "0",
+            "What was your most productive moment?": "0",
+            "What was your biggest distraction today?": "0",
+            "What is one thing you' re grateful for?": "0",
+            "What is one thing you learned today?": "0",
+            "What could have gone better?": "0",
+            "How do you feel about tomorrow?": "0",
+            "What is one thing you' ll do differently tomorrow?": "0"
+        },
+        "score": {
+            "date1": "score1"
+        }
+    }
+]

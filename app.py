@@ -36,6 +36,5 @@ app.register_blueprint(dashboard_bp, url_prefix='/dashboard')
 app.register_blueprint(therapists_bp, url_prefix='/therapists')
 
 
-
 if __name__ == '__main__':
     app.run()

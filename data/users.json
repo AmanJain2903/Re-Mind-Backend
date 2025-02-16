@@ -4,5 +4,11 @@
         "name": "John Doe",
         "email": "john@example.com",
         "password": "password123"
+    },
+    {
+        "id": "2a023264-ac6b-4720-8c24-b20ec423cba2",
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "password": "securepassword123"
     }
 ]

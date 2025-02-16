@@ -10,9 +10,12 @@ RESPONSES_FILE = "data/user_responses.json"
 # Helper functions to read and write JSON files
 def read_json_file(filepath):
     if not os.path.exists(filepath):
-        return {}
-    with open(filepath, "r") as file:
-        return json.load(file)
+        return []
+    try:
+        with open(filepath, "r") as file:
+            return json.load(file)
+    except json.JSONDecodeError:
+        return []
 
 def write_json_file(filepath, data):
     with open(filepath, "w") as file:
@@ -40,15 +43,36 @@ def get_questions():
 def submit_questions():
     data = request.get_json()
     user_id = data.get('user_id')
-    responses = data.get('responses') 
+    response = data.get('responses')
+    score = data.get('score')
 
     # Load existing responses from the JSON file
     all_responses = read_json_file(RESPONSES_FILE)
 
-    # Add or update the user's responses
-    all_responses[user_id] = responses
+    all_responses.append(data)
 
     # Save the updated responses back to the file
     write_json_file(RESPONSES_FILE, all_responses)
 
     return jsonify({"msg": "Responses submitted successfully"})
+
+@questions_bp.route('/entries', methods=['GET'])
+def get_entries():
+    user_id = request.args.get('user_id')
+    
+    if not user_id:
+        return jsonify({"msg": "User ID is required"}), 400
+
+    
+    entries = read_json_file(RESPONSES_FILE)
+
+    
+    user_entries = [entry['score'] for entry in entries if entry.get("user_id") == user_id]
+
+    output = {}
+
+    for entry in user_entries:
+        output.update(entry)
+
+
+    return jsonify(output), 200
