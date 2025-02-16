@@ -25,7 +25,7 @@ def write_json_file(filepath, data):
 @dashboard_bp.route('/entries', methods=['POST'])
 def submit_entry():
     data = request.get_json()
-    if not all(k in data for k in ["entryId", "date", "text", "user_id"]):
+    if not all(k in data for k in ["entry_id", "date", "text", "user_id"]):
         return jsonify({"msg": "Missing required fields"}), 400
 
     entry = {
